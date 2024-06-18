@@ -252,7 +252,7 @@ ADD CONSTRAINT CO_TYPE
 CHECK (TYPE IN ('CUSTODIAL', 'SECURITY', 'COUNSELING', 'CONTRACT', 'LANDSCAPING', 'UNCATEGORIZED'));
 
 ---7. Constrain PAB_ITEM.TYPE to the following values: 'REGULAR PAY', 'OVERTIME PAY', 'OTHER PAY', and 'BENEFIT'. All other entries should be rejected.
----already done by professor
+---
 
 ---8. Constrain TEACHER.GRADE_OR_SPECIAL to the following values: 'G' and 'S'. All other entries should be rejected.
 ALTER TABLE TEACHER
@@ -260,4 +260,4 @@ ADD CONSTRAINT CO_GRADE_OR_SPECIAL
 CHECK (GRADE_OR_SPECIAL IN ('G', 'S'));
 
 ---9. Constrain the value for OT_PAY.HOLIDAY_MULTIPLIER to be greater than or equal to 1.00 and less than or equal to 3.50.
----already done by professor
+---
